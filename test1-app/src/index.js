@@ -27,7 +27,7 @@ class Clock extends React.Component {
         let x = `The time is ${this.state.date.toLocaleTimeString()}`;
         return(
             <div>
-                <h1>The time is</h1>
+                <h1>The time</h1>
                 {/* to insert js inside html in react uve to write inside {} */}
                 <h2>{this.state.date.toLocaleTimeString()}</h2>
                 <h2>{x}</h2>
