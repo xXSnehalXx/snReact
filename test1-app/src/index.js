@@ -12,10 +12,10 @@ class Clock extends React.Component {
     //in react no need to mention function to declare a funciton and no need to declare variable just directly this.varName = ?
     //in setInterval the first parament is handler function in which u have to put the function or something you wanna do inside it only
     componentDidMount(){
-        this.timerID = setInterval(() => this.tick() ,1000);
+        this.timerId = setInterval(() => this.tick() ,1000);
     }
     componentWillUnmount(){
-        clearInterval(this.timerID);
+        clearInterval(this.timerId);
     }
 
     tick(){
