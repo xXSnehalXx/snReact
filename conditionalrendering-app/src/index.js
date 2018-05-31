@@ -45,7 +45,6 @@ class LoginControl extends React.Component{
                 {button}
             </div>
         );
-
     }
 }
 
