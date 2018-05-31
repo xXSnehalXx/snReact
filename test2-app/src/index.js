@@ -58,7 +58,7 @@ class LoggingButton1 extends React.Component {
                 1- dont bind in contructor but bind in onClick = this.handleClick.bind(this,prop)
                    the above binds and sends parameter
                 2- or use classfields syntax and send param using onClick = {this.handleClick(param)}
-
+               
                 */}
             </div>
 
