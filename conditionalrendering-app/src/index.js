@@ -52,6 +52,7 @@ class LoginControl extends React.Component{
 }
 
 function Mailbox(props) {
+
     const unreadMessages = props.unreadMessages;
     return (
         <div>
@@ -63,6 +64,7 @@ function Mailbox(props) {
             unreadMessages.map((value,index)=><h3 key={index}>{value}</h3>)
             //for each h3 which gets displays all the messages ,it must have a key attribute set to a unique key prop like index like key={index}
             //for react to change components swiftly
+            //when u call a component/functional component , to prevents its execution return null from the function
             )
         }
         </div>
