@@ -40,7 +40,7 @@ class LoginControl extends React.Component{
     const isLoggedOn = this.state.isLoggedOn;
     const greeting = isLoggedOn ? (<UserGreeting/>) : (<GuestGreeting/>);
     const button   = isLoggedOn ? (<LogoutButt onClick = {this.handleLogoutClick}/>) : (<LoginButt onClick={this.handleLoginClick}/>);
-    const message = isLoggedOn ? (<Mailbox unreadMessages={messages}/>):null;
+    const messsage = isLoggedOn ? (<Mailbox unreadMessages={messages}/>):null;
         return(
             <div>
                 {greeting}
