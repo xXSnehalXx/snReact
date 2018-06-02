@@ -1,7 +1,5 @@
 import React from 'react';
 import 'shortid';
-import './index.js'; 
-
 const Card  = (props) => {
     const {id,username,name,email,} = props.data;
     return (
