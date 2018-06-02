@@ -19,7 +19,7 @@ const LogoutButt = (props) => {
     return <button onClick={props.onClick}>Logout</button>
 }
 
-class LoginControl extends React.Component{
+class MachineLoggingControl extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -121,6 +121,6 @@ function Mailbox(props) {
 //   }
 
   ReactDOM.render(
-      <LoginControl />,
+      <MachineLoggingControl />,
       document.getElementById('root')
   );
