@@ -3,7 +3,7 @@ import 'shortid';
 import './index.js'; 
 
 const Card  = (props) => {
-    let {id,username,name,email,} = props.data;
+    const {id,username,name,email,} = props.data;
     return (
         <div className = "bg-light-blue tc br3 pa2 dib ma2 grow shadow-5">
             <img src={`https://robohash.org/${id}?200x200`} alt={username}/>
