@@ -69,6 +69,6 @@ class LoggingButton1 extends React.Component {
 
 
 ReactDOM.render(
-<LoggingButton1  name ="snehal"/>,
+<LoggingButton  name ="snehal"/>,
 document.getElementById('root')
 );

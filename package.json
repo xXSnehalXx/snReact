@@ -1,0 +1,26 @@
+{
+  "name": "snreact",
+  "version": "1.0.0",
+  "description": "HEy yall",
+  "main": "index.js",
+  "dependencies": {
+    "shortid": "^2.2.8",
+    "tachyons": "^4.9.1"
+  },
+  "devDependencies": {
+    "eslint-config-google": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xXSnehalXx/snReact.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xXSnehalXx/snReact/issues"
+  },
+  "homepage": "https://github.com/xXSnehalXx/snReact#readme"
+}
