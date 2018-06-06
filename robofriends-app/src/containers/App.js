@@ -6,12 +6,10 @@ import {Scroll} from '../components/Scroll.js';
 import {ErrorBoundary} from '../components/ErrorBoundary';
 import {setSearchField} from '../actions.js'
 import './App.css';
-const mapStateToProps = state => {
-    return{searchField:state.searchField}
-}
-const mapDispatchToProps = (dispatch) => {
-    return {onSearchChange:(event)=>dispatch(setSearchField(event.target.value))}
-}
+const mapStateToProps = state => ({searchField:state.searchField})
+
+const mapDispatchToProps = (dispatch) => ({onSearchChange:(event)=>dispatch(setSearchField(event.target.value))});
+
 class App extends Component {
    constructor(props){
        super(props);
