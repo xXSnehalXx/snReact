@@ -1,4 +1,8 @@
-import {CHANGE_SEARCH_FIELD} from './constants.js';
+import {  CHANGE_SEARCH_FIELD,
+    REQUEST_ROBOTS_FAILED,
+    REQUEST_ROBOTS_PENDING,
+    REQUEST_ROBOTS_SUCCESS
+    } from './constants.js';
 //STEP 2 REDUX
 export const setSearchField = (text) => ({
           // console.log(text);
@@ -7,3 +11,10 @@ export const setSearchField = (text) => ({
          payload:text
 // }
 });
+export const requestRobotsData =(dispatch) => {
+    dispatch({type:REQUEST_ROBOTS_PENDING});
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => response.json())
+        .then(data => dispatch({type:REQUEST_ROBOTS_SUCCESS,payload:data}))
+        .catch(error => dispatch({type:REQUEST_ROBOTS_FAILED,payload:error}))    
+}
