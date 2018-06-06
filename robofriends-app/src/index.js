@@ -15,7 +15,7 @@ import thunkMiddleware from 'redux-thunk';
 const logger = createLogger();
 //STEP 5 REDUX 
 const rootReducer = combineReducers({ searchRobots,requestRobots });
-const stores = createStore(rootReducer,applyMiddleware(logger)) ;
+const stores = createStore(rootReducer,applyMiddleware(thunkMiddleware,logger)) ;
 //use provider to pass down store as props 
 ReactDOM.render(
     <Provider store={stores} >
