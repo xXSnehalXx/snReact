@@ -6,6 +6,8 @@ import {Scroll} from '../components/Scroll.js';
 import {ErrorBoundary} from '../components/ErrorBoundary';
 import {setSearchField} from '../actions.js'
 import './App.css';
+
+//STEP 6 REDUX
 const mapStateToProps = state => ({searchField:state.searchField})
 
 const mapDispatchToProps = (dispatch) => ({onSearchChange:(event)=>dispatch(setSearchField(event.target.value))});
@@ -44,4 +46,5 @@ class App extends Component {
             );
     }
 }
+//STEP 7 REDUX
 export default connect(mapStateToProps,mapDispatchToProps)(App) ;

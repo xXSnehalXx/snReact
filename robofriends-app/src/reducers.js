@@ -1,5 +1,5 @@
 import {CHANGE_SEARCH_FIELD} from './constants.js';
-
+//STEP 3 REDUX
 const initialState = {
           searchField:''
 };
